@@ -1,0 +1,57 @@
+﻿<Page x:Class="WpfApp1.Pages.AddEditPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Pages"
+      mc:Ignorable="d" 
+      FontFamily="Tahoma"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddEditPage">
+
+    <Grid Style="{StaticResource secondColor}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">ID</Label>
+        <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">LastName</Label>
+        <Label Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">FirstName</Label>
+        <Label Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">Patronymic</Label>
+        <Label Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">Gender</Label>
+        <Label Grid.Row="5" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">Phone</Label>
+        <Label Grid.Row="6" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">PhotoPath</Label>
+        <Label Grid.Row="7" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">Birthday</Label>
+        <Label Grid.Row="8" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">Email</Label>
+        <Label Grid.Row="9" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">RegistationDate</Label>
+
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding ID}" IsReadOnly="True" Width="100" Height="30"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding LastName}" Width="100" Height="30"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding FirstName}" Width="100" Height="30"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Patronymic}" Width="100" Height="30"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"></TextBox>
+        <ComboBox Name="GenderComboBox" Grid.Row="4" Grid.Column="1" Width="100" Height="30"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"></ComboBox>
+        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Phone}" Width="100" Height="30"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"></TextBox>
+        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding PhotoPath}" Width="100" Height="30"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"></TextBox>
+        <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding Birthday}" Width="100" Height="30"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"></TextBox>
+        <TextBox Grid.Row="8" Grid.Column="1" Text="{Binding Email}" Width="100" Height="30"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"></TextBox>
+        <TextBox Grid.Row="9" Grid.Column="1" Text="{Binding RegistrationDate}" Width="100" Height="30"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"></TextBox>
+
+        <Button Grid.Row="10" Grid.Column="0" Width="100" Height="30" Content="Сохранить" Click="SaveButton_Click"></Button>
+        <Button Grid.Row="10" Grid.Column="1" Width="100" Height="30" Content="Назад" Click="BackButton_Click"></Button>
+    </Grid>
+</Page>

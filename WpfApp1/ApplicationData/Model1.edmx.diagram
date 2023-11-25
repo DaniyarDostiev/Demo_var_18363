@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="194159346fc1400f9d091f60041140c6" Name="Diagram1">
+        <EntityTypeShape EntityType="var_18363Model.Client" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="var_18363Model.ClientService" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="var_18363Model.DocumentByService" Width="1.5" PointX="5.25" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="var_18363Model.Gender" Width="1.5" PointX="1.5" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="var_18363Model.Manufacturer" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="var_18363Model.Product" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="var_18363Model.ProductPhoto" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="var_18363Model.ProductSale" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="var_18363Model.Service" Width="1.5" PointX="0.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="var_18363Model.ServicePhoto" Width="1.5" PointX="3" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="var_18363Model.sysdiagrams" Width="1.5" PointX="5.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="var_18363Model.Tag" Width="1.5" PointX="3" PointY="17.125" IsExpanded="true" />
+        <AssociationConnector Association="var_18363Model.FK_Client_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="var_18363Model.FK_ClientService_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="var_18363Model.FK_ClientService_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="var_18363Model.FK_DocumentByService_ClientService" ManuallyRouted="false" />
+        <AssociationConnector Association="var_18363Model.FK_ProductSale_ClientService" ManuallyRouted="false" />
+        <AssociationConnector Association="var_18363Model.FK_Product_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="var_18363Model.FK_ProductPhoto_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="var_18363Model.FK_ProductSale_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="var_18363Model.FK_ServicePhoto_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="var_18363Model.AttachedProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="var_18363Model.TagOfClient" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
